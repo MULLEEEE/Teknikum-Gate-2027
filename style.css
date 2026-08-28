@@ -4,3 +4,6 @@
 .light-mode{--ink:#eef2f3;--paper:#10151a;--muted:#5f6970;--line:#c8d1d2}.light-mode .site-header{background:rgba(238,242,243,.9)}.light-mode .dark-section,.light-mode .gallery-section{background:#dfe8e8}.light-mode .tournament-card{background:#e3eaea}.light-mode .booking-section{background:#f8faf9}.brand-logo{display:block;width:210px;height:68px;object-fit:contain}
 .payment-box{border:1px solid #c5c7c4;padding:16px;margin:0;text-transform:none;letter-spacing:0}.payment-box legend{padding:0 8px;font:700 10px var(--display);letter-spacing:1px}.payment-option{display:flex;align-items:flex-start;gap:10px;text-transform:none;letter-spacing:0;cursor:pointer}.payment-option input{width:16px;margin:3px 0 0}.payment-option span{display:flex;flex-direction:column;gap:3px}.payment-option strong{font:700 16px var(--display)}.payment-option strong i{color:#e83e68;margin-right:5px}.payment-option small,.payment-note{color:#666;font:400 12px/1.45 var(--body);text-transform:none;letter-spacing:0}.payment-note{margin:12px 0 0 26px}
 :root{--cyan:#2274fc}
+.site-header>.brand{order:0;position:static;transform:none;margin-left:-14px;flex-shrink:0}.site-header .brand-logo{width:160px;height:58px}.site-header .main-nav{margin-left:14px}
+@media(max-width:720px){.site-header .brand-logo{width:140px;height:52px}}
+.site-header .main-nav{gap:18px}
