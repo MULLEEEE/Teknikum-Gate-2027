@@ -47,7 +47,8 @@ const seatInput = document.getElementById('seat-input');
 const selectedSeatLabel = document.getElementById('selected-seat');
 const bookingForm = document.getElementById('booking-form');
 const bookingMessage = document.getElementById('booking-message');
-const swishButton = document.getElementById('swish-button');
+const swishModal = document.getElementById('swish-modal');
+const swishClose = document.getElementById('swish-close');
 const swishNumber = '0729292549';
 const bookingResetVersion = 'all-seats-available-2026-08-25';
 if (localStorage.getItem('teknikumBookingReset') !== bookingResetVersion) {
@@ -57,6 +58,43 @@ if (localStorage.getItem('teknikumBookingReset') !== bookingResetVersion) {
 const storedBookings = JSON.parse(localStorage.getItem('teknikumBookings') || '[]');
 const reservedSeats = new Set(storedBookings.map(booking => booking.seat));
 let chosenSeat = '';
+
+function normalizeEmail(value) {
+  return String(value ?? '').trim().toLowerCase();
+}
+
+function normalizePhone(value) {
+  return String(value ?? '').trim().toLowerCase().replace(/[\s\-()]+/g, '');
+}
+
+function hasDuplicateBooking(email, phone) {
+  const normalizedEmail = normalizeEmail(email);
+  const normalizedPhone = normalizePhone(phone);
+
+  return storedBookings.some(booking => {
+    const existingEmail = normalizeEmail(booking.email);
+    const existingPhone = normalizePhone(booking.phone);
+    return existingEmail === normalizedEmail && existingPhone === normalizedPhone;
+  });
+}
+
+function formIsComplete() {
+  const requiredFields = bookingForm.querySelectorAll('[required]');
+  for (const field of requiredFields) {
+    if (!field.checkValidity() || !field.value.trim()) {
+      return false;
+    }
+  }
+  return Boolean(chosenSeat);
+}
+
+function openSwishModal() {
+  swishModal.hidden = false;
+}
+
+function closeSwishModal() {
+  swishModal.hidden = true;
+}
 
 function selectSeat(seat) {
   document.querySelectorAll('.seat.selected').forEach(item => item.classList.remove('selected'));
@@ -89,24 +127,45 @@ for (let seatNumber = 1; seatNumber <= 100; seatNumber += 1) {
 
 bookingForm.addEventListener('submit', event => {
   event.preventDefault();
-  if (!chosenSeat) {
-    bookingMessage.textContent = 'Välj en sittplats på kartan först.';
+
+  if (!bookingForm.checkValidity() || !chosenSeat) {
+    bookingMessage.textContent = !chosenSeat ? 'Välj en sittplats på kartan först.' : 'Fyll i alla fält innan du fortsätter.';
     bookingMessage.style.color = '#c03d5d';
+    bookingForm.reportValidity();
     return;
   }
 
   const data = Object.fromEntries(new FormData(event.target));
+  const email = data.email;
+  const phone = data.phone;
+
+  if (hasDuplicateBooking(email, phone)) {
+    bookingMessage.textContent = 'Du kan bara boka en plats per e-post och telefonnummer.';
+    bookingMessage.style.color = '#c03d5d';
+    return;
+  }
+
   storedBookings.push(data); localStorage.setItem('teknikumBookings', JSON.stringify(storedBookings));
   bookingMessage.textContent = `Tack för din bokning, ${data.firstName}! Plats ${chosenSeat} är reserverad.`;
+  bookingMessage.style.color = '#3c7d55';
+
   if (swishNumber) {
-    const paymentMessage = `Teknikum Gate - ${chosenSeat} - ${data.firstName} ${data.lastName}`;
-    swishButton.href = `swish://payment?${new URLSearchParams({ payee: swishNumber, message: paymentMessage })}`;
-    window.location.href = swishButton.href;
+    openSwishModal();
   } else {
-    bookingMessage.textContent += ' Lägg in arrangörens Swish-nummer i script.js för att öppna Swish.';
+    bookingMessage.textContent += ' Lägg in arrangörens Swish-nummer i script.js för att visa QR-koden.';
   }
+
   const chosen = document.querySelector(`[data-seat="${chosenSeat}"]`); chosen.classList.remove('selected'); chosen.classList.add('reserved'); chosen.disabled = true;
   event.target.reset(); chosenSeat = ''; seatInput.value = ''; selectedSeatLabel.textContent = 'Ingen vald';
+});
+
+swishClose.addEventListener('click', closeSwishModal);
+swishModal.addEventListener('click', event => {
+  if (event.target === swishModal) closeSwishModal();
+});
+
+bookingForm.addEventListener('input', () => {
+  if (!formIsComplete()) return;
 });
 
 document.querySelectorAll('.rule-tab').forEach(tab => tab.addEventListener('click', () => {
