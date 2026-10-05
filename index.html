@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="sv">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Teknikum Gate LAN 2027 - 24 timmar gaming, turneringar och gemenskap i Växjö.">
+	<meta name="description" content="Teknikum Gate LAN 2027 - 24 hours of gaming, tournaments and community in Växjö.">
 	<title>Teknikum Gate LAN 2027</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,28 +15,29 @@
 	<div class="loader" id="loader">
 		<div class="loader-mark">TG<span>.</span></div>
 		<div class="loader-line"><i></i></div>
-		<p>LADDAR EVENTET</p>
+		<p>LOADING EVENT</p>
 	</div>
 	<header class="site-header" id="top">
-			<a class="brand" href="#hem" aria-label="Teknikum Gate startsida">
+			<a class="brand" href="#hem" aria-label="Teknikum Gate home">
 				<img class="brand-logo" src="Teknikum Gate Logo V1 Transparent Background.png" alt="Teknikum Gate LAN">
 			</a>
-		<nav class="main-nav" id="main-nav" aria-label="Huvudnavigation">
-			<a class="active" href="#hem">Hem</a>
-			<a href="#eventet">Om eventet</a>
-			<a href="#schema">Schema</a>
-			<a href="#turneringar">Turneringar</a>
-			<a href="#boka">Boka plats</a>
-			<a href="#regler">Regler</a>
+		<nav class="main-nav" id="main-nav" aria-label="Main navigation">
+			<a class="active" href="#hem">Home</a>
+			<a href="#eventet">About</a>
+			<a href="#schema">Schedule</a>
+			<a href="#turneringar">Tournaments</a>
+			<a href="#boka">Book a seat</a>
+			<a href="#regler">Rules</a>
 			<a href="#faq">FAQ</a>
-			<a href="#kontakt">Kontakt</a>
+			<a href="#kontakt">Contact</a>
 		</nav>
 		<div class="header-actions">
-			<button class="icon-btn theme-toggle" aria-label="Byt tema" title="Byt tema">
+			<button class="icon-btn theme-toggle" aria-label="Toggle theme" title="Toggle theme">
 				<i class="fa-solid fa-sun"></i>
 			</button>
+			<button class="icon-btn language-toggle" id="language-toggle" type="button" aria-label="Switch to Swedish" title="Switch to Swedish">SV</button>
 			<a class="button button-small" href="#boka">Lock In <i class="fa-solid fa-arrow-right"></i></a>
-			<button class="menu-toggle icon-btn" id="menu-toggle" aria-label="Öppna meny">
+			<button class="menu-toggle icon-btn" id="menu-toggle" aria-label="Open menu">
 				<i class="fa-solid fa-bars"></i>
 			</button>
 		</div>
@@ -44,9 +45,9 @@
 
 	<main>
 		<section class="hero section-grid" id="hem">
-			<div class="hero-copy reveal"><p class="eyebrow"><span></span> TEKNIKUM GATE PRESENTS</p><h1>PLAY HARD.<br><em>LOCK IN.</em></h1><p class="hero-lead">24 timmar gaming, turneringar och gemenskap.<br>Växjös skarpaste LAN-upplevelse väntar.</p><div class="hero-buttons"><a class="button" href="#boka">Lock In <i class="fa-solid fa-arrow-right"></i></a><a class="text-link" href="#eventet">Upptäck eventet <i class="fa-solid fa-play"></i></a></div><div class="hero-meta"><div><small>DATUM</small><strong>12–13 DEC 2027</strong></div><div><small>PLATS</small><strong>TEKNIKUM, VÄXJÖ</strong></div><div><small>PLATSER KVAR</small><strong class="accent-text">100 <span>/ 100</span></strong></div></div></div>
+			<div class="hero-copy reveal"><p class="eyebrow"><span></span> TEKNIKUM GATE PRESENTS</p><h1>PLAY HARD.<br><em>LOCK IN.</em></h1><p class="hero-lead">24 hours of gaming, tournaments and community.<br>Växjö’s ultimate LAN experience awaits.</p><div class="hero-buttons"><a class="button" href="#boka">Lock In <i class="fa-solid fa-arrow-right"></i></a><a class="text-link" href="#eventet">Explore the event <i class="fa-solid fa-play"></i></a></div><div class="hero-meta"><div><small>DATE</small><strong>DEC 12–13, 2027</strong></div><div><small>LOCATION</small><strong>TEKNIKUM, VÄXJÖ</strong></div><div><small>SEATS LEFT</small><strong class="accent-text">100 <span>/ 100</span></strong></div></div></div>
 			<div class="hero-visual reveal"><div class="hero-ring"></div><div class="hero-tag tag-one">24H<br><small>NON-STOP</small></div><div class="hero-tag tag-two">LVL<br><strong>2027</strong></div><div class="hero-console"><div class="console-screen"><span>READY_</span><b>01</b></div><div class="console-controls"><i></i><i></i><i></i></div></div><div class="scanlines"></div></div>
-			<div class="scroll-cue"><span></span> SCROLLA FÖR ATT UTFORSKA</div>
+			<div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
 		</section>
 
 		<section class="countdown band">
@@ -56,53 +57,67 @@
 					<h2>COUNTDOWN</h2>
 				</div>
 				<div class="timer" id="countdown">
-					<div><strong data-unit="days">00</strong><span>DAGAR</span></div>
+					<div><strong data-unit="days">00</strong><span>DAYS</span></div>
 					<b>:</b>
-					<div><strong data-unit="hours">00</strong><span>TIMMAR</span></div>
+					<div><strong data-unit="hours">00</strong><span>HOURS</span></div>
 					<b>:</b>
-					<div><strong data-unit="minutes">00</strong><span>MINUTER</span></div>
+					<div><strong data-unit="minutes">00</strong><span>MINUTES</span></div>
 					<b>:</b>
-					<div><strong data-unit="seconds">00</strong><span>SEKUNDER</span></div>
+					<div><strong data-unit="seconds">00</strong><span>SECONDS</span></div>
 				</div>
 			</div>
 		</section>
 
 		<section class="section container intro" id="eventet">
 			<div class="section-heading reveal">
-				<p class="eyebrow"><span></span> MER ÄN ETT LAN</p>
-				<h2>DITT GAME.<br><em>DIN ARENA.</em></h2>
+				<p class="eyebrow"><span></span> MORE THAN A LAN</p>
+				<h2>YOUR GAME.<br><em>YOUR ARENA.</em></h2>
 			</div>
 			<div class="intro-content reveal">
-				<p class="large-copy">Teknikum Gate är en mötesplats för spelare, skapare och vänner. En helg där skärmen blir större, matcherna hetare och nya lagkamrater finns runt varje hörn.</p>
-				<a class="text-link" href="#boka">Bli en del av det <i class="fa-solid fa-arrow-right"></i></a>
+				<p class="large-copy">Teknikum Gate is a meeting place for gamers, creators and friends. A weekend where the screens get bigger, the matches get more intense, and new teammates are around every corner.</p>
+				<a class="text-link" href="#boka">Be part of it <i class="fa-solid fa-arrow-right"></i></a>
 			</div>
 		</section>
 
 		<section class="container stats-grid reveal">
-			<div><strong>100</strong><span>PLATSER</span></div>
-			<div><strong>05</strong><span>TURNERINGAR</span></div>
-			<div><strong>1000+</strong><span>KR I PRISER</span></div>
-			<div><strong>24</strong><span>TIMMAR GAMING</span></div>
+			<div><strong>100</strong><span>SEATS</span></div>
+			<div><strong>05</strong><span>TOURNAMENTS</span></div>
+			<div><strong>1000+</strong><span>SEK IN PRIZES</span></div>
+			<div><strong>24</strong><span>HOURS OF GAMING</span></div>
 		</section>
 
-		<section class="section dark-section" id="schema"><div class="container"><div class="split-heading reveal"><div><p class="eyebrow"><span></span> HÅLL KOLL PÅ ACTIONEN</p><h2>EVENT<br><em>SCHEDULE</em></h2></div><p>Från första boot-up till sista finalen. Här händer det alltid något.</p></div><div class="timeline reveal"><div class="timeline-item active"><time>10:00</time><div><span class="dot"></span><h3>Dörrarna öppnar</h3><p>Checka in, hitta din plats och gör dig hemmastadd.</p></div></div><div class="timeline-item"><time>11:00</time><div><span class="dot"></span><h3>Fri gaming</h3><p>Warm-up, nya vänner och fri spelplan.</p></div></div><div class="timeline-item"><time>14:00</time><div><span class="dot"></span><h3>CS2 Tournament</h3><p>Gruppspelet drar igång på huvudscenen.</p></div></div><div class="timeline-item"><time>17:00</time><div><span class="dot"></span><h3>EA FC Tournament</h3><p>1v1. Inga ursäkter. Bara mål.</p></div></div><div class="timeline-item"><time>20:00</time><div><span class="dot"></span><h3>Rocket League</h3><p>Flyg högt och landa hårt.</p></div></div><div class="timeline-item"><time>22:00</time><div><span class="dot"></span><h3>Quiz & nattutmaningar</h3><p>Testa din gamingkoll och håll energin uppe.</p></div></div><div class="timeline-item"><time>09:00</time><div><span class="dot"></span><h3>Finaler & prisceremoni</h3><p>Den sista matchen. Den största applåden.</p></div></div></div></div></section>
+		<section class="section dark-section" id="schema"><div class="container"><div class="split-heading reveal"><div><p class="eyebrow"><span></span> STAY ON TOP OF THE ACTION</p><h2>EVENT<br><em>SCHEDULE</em></h2></div><p>From the first boot-up to the final match, there’s always something happening.</p></div><div class="timeline reveal"><div class="timeline-item active"><time>10:00</time><div><span class="dot"></span><h3>Doors open</h3><p>Check in, find your seat and get settled.</p></div></div><div class="timeline-item"><time>11:00</time><div><span class="dot"></span><h3>Free play</h3><p>Warm up, meet new people and play your way.</p></div></div><div class="timeline-item"><time>14:00</time><div><span class="dot"></span><h3>CS2 Tournament</h3><p>Group stages kick off on the main stage.</p></div></div><div class="timeline-item"><time>17:00</time><div><span class="dot"></span><h3>EA FC Tournament</h3><p>1v1. No excuses. Just goals.</p></div></div><div class="timeline-item"><time>20:00</time><div><span class="dot"></span><h3>Rocket League</h3><p>Fly high and land hard.</p></div></div><div class="timeline-item"><time>22:00</time><div><span class="dot"></span><h3>Quiz & night challenges</h3><p>Test your gaming knowledge and keep the energy up.</p></div></div><div class="timeline-item"><time>09:00</time><div><span class="dot"></span><h3>Finals & awards ceremony</h3><p>The final match. The loudest applause.</p></div></div></div></div></section>
 
-		<section class="section container" id="turneringar"><div class="split-heading reveal"><div><p class="eyebrow"><span></span> SPELA OM ÄRAN</p><h2>CHOOSE YOUR<br><em>FIGHT.</em></h2></div><a class="button button-outline" href="#boka">Registrera lag <i class="fa-solid fa-arrow-right"></i></a></div><div class="tournament-grid reveal"><article class="tournament-card cs"><span class="game-number">01</span><i class="fa-solid fa-crosshairs game-icon"></i><h3>COUNTER<br>STRIKE 2</h3><div><span>PRISPOTT<strong>500 KR</strong></span><span>START<strong>14:00</strong></span><span>LAG<strong>16</strong></span></div></article><article class="tournament-card valorant"><span class="game-number">02</span><i class="fa-solid fa-bolt game-icon"></i><h3>VALORANT</h3><div><span>PRISPOTT<strong>250 KR</strong></span><span>START<strong>15:00</strong></span><span>LAG<strong>12</strong></span></div></article><article class="tournament-card rocket"><span class="game-number">03</span><i class="fa-solid fa-car-side game-icon"></i><h3>ROCKET<br>LEAGUE</h3><div><span>PRISPOTT<strong>250 KR</strong></span><span>START<strong>20:00</strong></span><span>LAG<strong>08</strong></span></div></article><article class="tournament-card fc"><span class="game-number">04</span><i class="fa-solid fa-futbol game-icon"></i><h3>EA SPORTS<br>FC 26</h3><div><span>PRISPOTT<strong>PREMIER</strong></span><span>START<strong>17:00</strong></span><span>LAG<strong>16</strong></span></div></article></div></section>
+		<section class="section container" id="turneringar"><div class="split-heading reveal"><div><p class="eyebrow"><span></span> PLAY FOR GLORY</p><h2>CHOOSE YOUR<br><em>FIGHT.</em></h2></div><a class="button button-outline" href="#boka">Register your team <i class="fa-solid fa-arrow-right"></i></a></div><div class="tournament-grid reveal"><article class="tournament-card cs"><span class="game-number">01</span><i class="fa-solid fa-crosshairs game-icon"></i><h3>COUNTER<br>STRIKE 2</h3><div><span>PRIZE POOL<strong>500 KR</strong></span><span>STARTS<strong>14:00</strong></span><span>TEAMS<strong>16</strong></span></div></article><article class="tournament-card valorant"><span class="game-number">02</span><i class="fa-solid fa-bolt game-icon"></i><h3>VALORANT</h3><div><span>PRIZE POOL<strong>250 KR</strong></span><span>STARTS<strong>15:00</strong></span><span>TEAMS<strong>12</strong></span></div></article><article class="tournament-card rocket"><span class="game-number">03</span><i class="fa-solid fa-car-side game-icon"></i><h3>ROCKET<br>LEAGUE</h3><div><span>PRIZE POOL<strong>250 KR</strong></span><span>STARTS<strong>20:00</strong></span><span>TEAMS<strong>08</strong></span></div></article><article class="tournament-card fc"><span class="game-number">04</span><i class="fa-solid fa-futbol game-icon"></i><h3>EA SPORTS<br>FC 26</h3><div><span>PRIZE<strong>TBD</strong></span><span>STARTS<strong>17:00</strong></span><span>TEAMS<strong>16</strong></span></div></article></div></section>
 
-		<section class="section booking-section" id="boka"><div class="container"><div class="section-heading reveal"><p class="eyebrow"><span></span> PLATSBOKNING</p><h2>LOCK IN<br><em>YOUR SPOT.</em></h2></div><div class="booking-layout reveal"><form class="booking-form" id="booking-form"><div class="form-row"><label>Förnamn<input name="firstName" required placeholder="Alex"></label><label>Efternamn<input name="lastName" required placeholder="Svensson"></label></div><div class="form-row"><label>E-post<input type="email" name="email" required placeholder="alex@email.com"></label><label>Telefon<input type="tel" name="phone" required placeholder="070-000 00 00"></label></div><div class="form-row"><label>Klass<input name="class" required placeholder="TE22B"></label><label>Gamingnamn<input name="gamertag" required placeholder="NOVA"></label></div><div class="form-row"><label>Favoritspel<select name="game" required><option value="">Välj spel</option><option>Counter Strike 2</option><option>Valorant</option><option>Rocket League</option><option>EA Sports FC 26</option></select></label><label>Sittplats<input id="seat-input" name="seat" required placeholder="Välj på kartan" readonly></label></div><fieldset class="payment-box"><legend>BETALNING</legend><label class="payment-option"><input type="radio" name="paymentMethod" value="swish" required><span><strong><i class="fa-solid fa-mobile-screen-button"></i> Swish</strong><small>Betalningen slutförs efter att bokningen har registrerats.</small></span></label><p class="payment-note">Swishnummer och belopp visas av arrangören innan betalning.</p></fieldset><label class="check-label"><input type="checkbox" required> Jag godkänner eventets regler och villkoren.</label><button class="button" type="submit">Bekräfta bokning <i class="fa-solid fa-arrow-right"></i></button><p class="form-message" id="booking-message"></p><a class="button swish-button" id="swish-button" href="#" hidden>Öppna Swish <i class="fa-solid fa-arrow-up-right-from-square"></i></a></form><div class="seat-area"><div class="seat-header"><h3>VÄLJ DIN PLATS</h3><span><i class="available"></i> Ledig <i class="reserved"></i> Bokad</span></div><div class="stage">MAIN STAGE / SCREEN</div><div class="seats" id="seats"></div><p class="selected-seat">Vald plats: <strong id="selected-seat">Ingen vald</strong></p></div></div></div></section>
+		<section class="section booking-section" id="boka">
+			<div class="container">
+				<div class="section-heading reveal"><p class="eyebrow"><span></span> SEAT BOOKING</p><h2>LOCK IN<br><em>YOUR SPOT.</em></h2></div>
+				<div class="booking-layout reveal">
+					<form class="booking-form" id="booking-form">
+						<div class="form-row"><label>First name<input name="firstName" required placeholder="Alex"></label><label>Last name<input name="lastName" required placeholder="Svensson"></label></div>
+						<div class="form-row"><label>Email<input type="email" name="email" required placeholder="alex@email.com"></label><label>Phone<input type="tel" name="phone" required placeholder="070-000 00 00"></label></div>
+						<div class="form-row"><label>School class<input name="class" required placeholder="TE22B"></label><label>Gamer tag<input name="gamertag" required placeholder="NOVA"></label></div>
+						<div class="form-row"><label>Favorite game<select name="game" required><option value="">Choose a game</option><option>Counter Strike 2</option><option>Valorant</option><option>Rocket League</option><option>EA Sports FC 26</option></select></label><label>Seat<input id="seat-input" name="seat" required placeholder="Choose on the map" readonly></label></div>
+						<fieldset class="payment-box"><legend>PAYMENT</legend><label class="payment-option"><input type="radio" name="paymentMethod" value="swish" required><span><strong><i class="fa-solid fa-mobile-screen-button"></i> Swish</strong><small>Payment is completed after your booking has been registered.</small></span></label><p class="payment-note">The organizer will provide the Swish number and amount before payment.</p></fieldset>
+						<label class="check-label"><input type="checkbox" required> I agree to the event rules and terms.</label><button class="button" type="submit">Confirm booking <i class="fa-solid fa-arrow-right"></i></button><p class="form-message" id="booking-message"></p><a class="button swish-button" id="swish-button" href="#" hidden>Open Swish <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</form>
+					<div class="seat-area"><div class="seat-header"><h3>CHOOSE YOUR SEAT</h3><span><i class="available"></i> Available <i class="reserved"></i> Reserved</span></div><div class="stage">MAIN STAGE / SCREEN</div><div class="seats" id="seats"></div><p class="selected-seat">Selected seat: <strong id="selected-seat">None selected</strong></p></div>
+				</div>
+			</div>
+		</section>
 
-		<section class="section dark-section prizes-rules" id="regler"><div class="container two-col"><div><p class="eyebrow"><span></span> REWARDS</p><h2>WIN<br><em>SOMETHING.</em></h2><div class="prize-list"><div><b>01</b><span><strong>Gamingtangentbord</strong><small>1:a plats</small></span><i class="fa-solid fa-trophy"></i></div><div><b>02</b><span><strong>Gamingmus</strong><small>2:a plats</small></span><i class="fa-solid fa-medal"></i></div><div><b>03</b><span><strong>Presentkort</strong><small>3:e plats</small></span><i class="fa-solid fa-award"></i></div></div></div><div class="rules-box"><p class="eyebrow"><span></span> PLAY FAIR</p><h2>REGLER<br><em>ÄR REGLER.</em></h2><div class="rule-tabs"><button class="rule-tab active" data-rule="allmant">01 / ALLMÄNT</button><button class="rule-tab" data-rule="utrustning">02 / UTRUSTNING</button><button class="rule-tab" data-rule="natverk">03 / NÄTVERK</button><button class="rule-tab" data-rule="beteende">04 / BETEENDE</button></div><ul class="rule-content" id="rule-content"><li>Respektera alla deltagare</li><li>Ingen mobbning eller diskriminering</li><li>Följ arrangörernas instruktioner</li></ul></div></div></section>
+		<section class="section dark-section prizes-rules" id="regler"><div class="container two-col"><div><p class="eyebrow"><span></span> REWARDS</p><h2>WIN<br><em>SOMETHING.</em></h2><div class="prize-list"><div><b>01</b><span><strong>Gaming keyboard</strong><small>1st place</small></span><i class="fa-solid fa-trophy"></i></div><div><b>02</b><span><strong>Gaming mouse</strong><small>2nd place</small></span><i class="fa-solid fa-medal"></i></div><div><b>03</b><span><strong>Gift card</strong><small>3rd place</small></span><i class="fa-solid fa-award"></i></div></div></div><div class="rules-box"><p class="eyebrow"><span></span> PLAY FAIR</p><h2>RULES<br><em>ARE RULES.</em></h2><div class="rule-tabs"><button class="rule-tab active" data-rule="allmant">01 / GENERAL</button><button class="rule-tab" data-rule="utrustning">02 / EQUIPMENT</button><button class="rule-tab" data-rule="natverk">03 / NETWORK</button><button class="rule-tab" data-rule="beteende">04 / CONDUCT</button></div><ul class="rule-content" id="rule-content"><li>Respect all participants</li><li>No bullying or discrimination</li><li>Follow the organizers’ instructions</li></ul></div></div></section>
 
-		<section class="section container faq-section" id="faq"><div class="section-heading reveal"><p class="eyebrow"><span></span> DU FRÅGAR. VI SVARAR.</p><h2>GOOD TO<br><em>KNOW.</em></h2></div><div class="faq-list reveal"><details open><summary>Måste jag ta med egen dator?<i class="fa-solid fa-plus"></i></summary><p>Ja, ta med din egen dator, skärm, tangentbord, mus och alla kablar du behöver.</p></details><details><summary>Finns det internet?<i class="fa-solid fa-plus"></i></summary><p>Vi erbjuder stabilt, snabbt internet till alla deltagare via vårt lokala nätverk.</p></details><details><summary>Kan jag sova på plats?<i class="fa-solid fa-plus"></i></summary><p>Absolut. Ta med sovsäck och liggunderlag. Vi har en särskild lugn sovzon.</p></details><details><summary>Finns kiosk?<i class="fa-solid fa-plus"></i></summary><p>Ja, kiosken är öppen hela eventet med snacks, dryck och enklare mat.</p></details><details><summary>Hur bokar jag plats?<i class="fa-solid fa-plus"></i></summary><p>Fyll i formuläret ovan, välj en ledig plats och bekräfta bokningen.</p></details></div></section>
+		<section class="section container faq-section" id="faq"><div class="section-heading reveal"><p class="eyebrow"><span></span> YOU ASK. WE ANSWER.</p><h2>GOOD TO<br><em>KNOW.</em></h2></div><div class="faq-list reveal"><details open><summary>Do I need to bring my own computer?<i class="fa-solid fa-plus"></i></summary><p>Yes, bring your own computer, monitor, keyboard, mouse and all the cables you need.</p></details><details><summary>Is internet available?<i class="fa-solid fa-plus"></i></summary><p>We provide stable, high-speed internet to all participants through our local network.</p></details><details><summary>Can I sleep at the venue?<i class="fa-solid fa-plus"></i></summary><p>Absolutely. Bring a sleeping bag and sleeping mat. We have a dedicated quiet sleeping area.</p></details><details><summary>Is there a kiosk?<i class="fa-solid fa-plus"></i></summary><p>Yes, the kiosk is open throughout the event and offers snacks, drinks and light meals.</p></details><details><summary>How do I book a seat?<i class="fa-solid fa-plus"></i></summary><p>Fill in the form above, choose an available seat and confirm your booking.</p></details></div></section>
 
-		<section class="gallery-section"><div class="container"><div class="split-heading reveal"><div><p class="eyebrow"><span></span> THE VIBE</p><h2>INSIDE THE<br><em>GATE.</em></h2></div><p>Hög energi. Långa nätter. Ett community som gör varje match större.</p></div><div class="gallery-grid reveal"><button class="gallery-item wide" data-image="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=900&q=80" alt="Gaming setup med neonljus"><span>01 / THE SETUP</span></button><button class="gallery-item" data-image="https://images.unsplash.com/photo-1603481546238-487240415921?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1603481546238-487240415921?auto=format&fit=crop&w=700&q=80" alt="Spelare framför skärmar"><span>02 / FOCUS</span></button><button class="gallery-item" data-image="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=700&q=80" alt="Gamingstation med färgade lampor"><span>03 / AFTER DARK</span></button></div></div></section>
+		<section class="gallery-section"><div class="container"><div class="split-heading reveal"><div><p class="eyebrow"><span></span> THE VIBE</p><h2>INSIDE THE<br><em>GATE.</em></h2></div><p>High energy. Long nights. A community that makes every match bigger.</p></div><div class="gallery-grid reveal"><button class="gallery-item wide" data-image="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=900&q=80" alt="Gaming setup with neon lights"><span>01 / THE SETUP</span></button><button class="gallery-item" data-image="https://images.unsplash.com/photo-1603481546238-487240415921?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1603481546238-487240415921?auto=format&fit=crop&w=700&q=80" alt="Player at a gaming setup"><span>02 / FOCUS</span></button><button class="gallery-item" data-image="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=700&q=80" alt="Gaming station with colored lights"><span>03 / AFTER DARK</span></button></div></div></section>
 
 		<section class="section sponsor-section"><div class="container sponsor-inner"><div><p class="eyebrow"><span></span> POWERED BY</p><h2>OUR<br><em>CREW.</em></h2></div><div class="sponsor-grid"><span>TEKNIKUM</span><span>BYTE<span class="accent-text">/</span>ZONE</span><span>GG<span class="accent-text">.</span>LOCAL</span><span>LEVEL<span class="accent-text">UP</span></span></div></div></section>
-		<section class="contact-section" id="kontakt"><div class="container contact-inner"><div><p class="eyebrow"><span></span> HAR DU FRÅGOR?</p><h2>JOIN THE<br><em>CONVERSATION.</em></h2><div class="contact-links"><a href="mailto:hej@teknikumgate.se"><i class="fa-solid fa-envelope"></i> teknikumgate@gmail.com</a><a href="https://discord.gg/Xqjj789jzD"><i class="fa-brands fa-discord"></i> Discord-server</a><a href="#"><i class="fa-brands fa-instagram"></i> @teknikumgate</a></div></div><form class="contact-form"><label>Namn<input required placeholder="Ditt namn"></label><label>E-post<input type="email" required placeholder="din@email.com"></label><label>Meddelande<textarea required rows="3" placeholder="Skriv ditt meddelande..."></textarea></label><button class="button" type="submit">Skicka meddelande <i class="fa-solid fa-arrow-right"></i></button></form></div></section>
+		<section class="contact-section" id="kontakt"><div class="container contact-inner"><div><p class="eyebrow"><span></span> HAVE QUESTIONS?</p><h2>JOIN THE<br><em>CONVERSATION.</em></h2><div class="contact-links"><a href="mailto:hej@teknikumgate.se"><i class="fa-solid fa-envelope"></i> teknikumgate@gmail.com</a><a href="https://discord.gg/Xqjj789jzD"><i class="fa-brands fa-discord"></i> Discord server</a><a href="#"><i class="fa-brands fa-instagram"></i> @teknikumgate</a></div></div><form class="contact-form"><label>Name<input required placeholder="Your name"></label><label>Email<input type="email" required placeholder="you@email.com"></label><label>Message<textarea required rows="3" placeholder="Write your message..."></textarea></label><button class="button" type="submit">Send message <i class="fa-solid fa-arrow-right"></i></button></form></div></section>
 	</main>
-	<footer><div class="container footer-inner"><a class="brand" href="#hem"><span class="brand-symbol">TG</span><span>TEKNIKUM<br><b>GATE</b></span></a><p>TEKNIKUM GATE LAN 2027PLAY HARD.
-STAY HUMAN.<br><small>12–13 DECEMBER · VÄXJÖ</small></p><div class="socials"><a href="https://discord.gg/Xqjj789jzD" aria-label="Discord"><i class="fa-brands fa-discord"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></div></div><div class="container copyright">© 2027 Teknikum Gate. Alla rättigheter förbehållna.</div></footer>
-	<button class="back-top" id="back-top" aria-label="Till toppen"><i class="fa-solid fa-arrow-up"></i></button><div class="lightbox" id="lightbox"><button aria-label="Stäng bild"><i class="fa-solid fa-xmark"></i></button><img src="" alt=""></div>
+	<footer><div class="container footer-inner"><a class="brand" href="#hem"><span class="brand-symbol">TG</span><span>TEKNIKUM<br><b>GATE</b></span></a><p>TEKNIKUM GATE LAN 2027<br>PLAY HARD. STAY HUMAN.<br><small>DECEMBER 12–13 · VÄXJÖ</small></p><div class="socials"><a href="https://discord.gg/Xqjj789jzD" aria-label="Discord"><i class="fa-brands fa-discord"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></div></div><div class="container copyright">© 2027 Teknikum Gate. All rights reserved.</div></footer>
+	<button class="back-top" id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button><div class="lightbox" id="lightbox"><button aria-label="Close image"><i class="fa-solid fa-xmark"></i></button><img src="" alt=""></div>
 	<script src="script.js"></script>
 </body>
 </html>

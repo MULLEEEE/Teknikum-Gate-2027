@@ -7,3 +7,4 @@
 .site-header>.brand{order:0;position:static;transform:none;margin-left:-14px;flex-shrink:0}.site-header .brand-logo{width:160px;height:58px}.site-header .main-nav{margin-left:14px}
 @media(max-width:720px){.site-header .brand-logo{width:140px;height:52px}}
 .site-header .main-nav{gap:18px}
+.language-toggle{min-width:28px;padding:6px 2px;color:var(--cyan);font:700 11px var(--body);letter-spacing:.6px}.language-toggle:hover{color:var(--paper)}
