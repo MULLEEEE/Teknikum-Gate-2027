@@ -8,3 +8,4 @@
 @media(max-width:720px){.site-header .brand-logo{width:140px;height:52px}}
 .site-header .main-nav{gap:18px}
 .language-toggle{min-width:28px;padding:6px 2px;color:var(--cyan);font:700 11px var(--body);letter-spacing:.6px}.language-toggle:hover{color:var(--paper)}
+.tournament-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
