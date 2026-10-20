@@ -46,12 +46,14 @@ const translations = {
   'EVENT REGISTRATION': 'EVENTANMÄLAN', 'REGISTER': 'ANMÄL DIG', 'NOW.': 'NU.', 'First name': 'Förnamn', 'Last name': 'Efternamn',
   'Email': 'E-post', 'Phone': 'Telefon',
   'CHOOSE YOUR TICKET': 'VÄLJ DIN BILJETT',
-  'Entry with a table': 'Inträde med bord', 'Premium entry': 'Premiuminträde',
+  'A seat at a medium-sized table shared with one other person': 'En plats vid ett medelstort bord som delas med en annan person',
+  'Your own table and free items from the kiosk': 'Eget bord och gratis varor från kiosken',
   'Entry only': 'Endast inträde', 'No table included': 'Utan bord',
   'Prize to be announced': 'Pris bestäms senare',
   'Tournament': 'Turnering', 'Optional add-on': 'Valfritt tillval',
   'Not available with entry-only ticket.': 'Ingår inte med biljetten Endast inträde.',
   'BOOKING CONFIRMED': 'BOKNING BEKRÄFTAD', 'TOTAL:': 'TOTALT:',
+  'PAYMENT DETAILS': 'BETALNINGSUPPGIFTER',
   'Close confirmation': 'Stäng bekräftelsen',
   'Your ticket selection is saved.': 'Ditt biljettval är sparat.',
   'Selected ticket:': 'Vald biljett:', 'Tournament participation:': 'Turneringsdeltagande:',
@@ -75,6 +77,7 @@ const translations = {
   'Discord server': 'Discord-server', 'DECEMBER 12–13 · VÄXJÖ': '12–13 DECEMBER · VÄXJÖ',
   'All rights reserved.': 'Alla rättigheter förbehållna.', 'Back to top': 'Till toppen', 'Close image': 'Stäng bild',
   'Switch to Swedish': 'Byt till svenska', 'Switch to English': 'Byt till engelska',
+  'Teknikum Gate logo': 'Teknikum Gate-logotyp',
   'Thank you for your booking,': 'Tack för din bokning,'
 };
 
@@ -189,6 +192,7 @@ const confirmationDialogClose = document.getElementById('confirmation-dialog-clo
 const confirmationDetails = document.getElementById('confirmation-details');
 const tournamentParticipation = document.getElementById('tournament-participation');
 const tournamentTicketDescription = document.querySelector('.tournament-ticket small');
+let confirmationDialogTimeout;
 
 function updateTournamentEligibility() {
   const entryOnlySelected = bookingForm.querySelector('input[name="admissionTicket"]:checked')?.value === 'entryOnly';
@@ -205,6 +209,7 @@ bookingForm.querySelectorAll('input[name="admissionTicket"]').forEach(ticket => 
 updateTournamentEligibility();
 
 confirmationDialogClose.addEventListener('click', () => confirmationDialog.close());
+confirmationDialog.addEventListener('close', () => clearTimeout(confirmationDialogTimeout));
 confirmationDialog.addEventListener('click', event => {
   if (event.target === confirmationDialog) confirmationDialog.close();
 });
@@ -226,16 +231,23 @@ bookingForm.addEventListener('submit', event => {
     ? (currentLanguage === 'sv' ? 'Ja' : 'Yes')
     : (currentLanguage === 'sv' ? 'Nej' : 'No');
   bookingMessage.textContent = currentLanguage === 'sv'
-    ? `Tack för din bokning, ${data.firstName}! Totalt att betala: ${data.totalCost} kr.`
-    : `Thank you for your booking, ${data.firstName}! Total to pay: ${data.totalCost} kr.`;
+    ? `Totalt att betala: ${data.totalCost} kr. Vi återkommer med biljetten via mejl eller sms när betalningen har genomförts.`
+    : `Total to pay: ${data.totalCost} kr. We will send your ticket by email or text message once your payment has been completed.`;
   const selectedTicketLabel = currentLanguage === 'sv' ? 'Vald biljett:' : 'Selected ticket:';
   const tournamentLabel = currentLanguage === 'sv' ? 'Turneringsdeltagande:' : 'Tournament participation:';
   const totalLabel = currentLanguage === 'sv' ? 'Totalt att betala:' : 'Total to pay:';
-  confirmationDetails.textContent = `${totalLabel} ${data.totalCost} kr. ${selectedTicketLabel} ${ticketName}. ${tournamentLabel} ${tournamentStatus}.`;
+  const deliveryMessage = currentLanguage === 'sv'
+    ? 'När betalningen har genomförts skickar vi din biljett via mejl eller sms.'
+    : 'After your payment is complete, we will send your ticket by email or text message.';
+  confirmationDetails.textContent = `${totalLabel} ${data.totalCost} kr. ${selectedTicketLabel} ${ticketName}. ${tournamentLabel} ${tournamentStatus}. ${deliveryMessage}`;
   document.getElementById('confirmation-title').textContent = currentLanguage === 'sv'
     ? `TOTALT: ${data.totalCost} KR`
     : `TOTAL: ${data.totalCost} KR`;
   confirmationDialog.showModal();
+  clearTimeout(confirmationDialogTimeout);
+  confirmationDialogTimeout = window.setTimeout(() => {
+    if (confirmationDialog.open) confirmationDialog.close();
+  }, 30_000);
   event.target.reset();
   updateTournamentEligibility();
 });
