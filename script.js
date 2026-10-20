@@ -19,7 +19,7 @@ const translations = {
   'EVENT': 'EVENEMANG', 'COUNTDOWN': 'NEDRÄKNING', 'DAYS': 'DAGAR', 'HOURS': 'TIMMAR', 'MINUTES': 'MINUTER', 'SECONDS': 'SEKUNDER',
   'MORE THAN A LAN': 'MER ÄN ETT LAN', 'YOUR GAME.': 'DITT SPEL.', 'YOUR ARENA.': 'DIN ARENA.',
   'Teknikum Gate is a meeting place for gamers, creators and friends. A weekend where the screens get bigger, the matches get more intense, and new teammates are around every corner.': 'Teknikum Gate är en mötesplats för gamers, kreatörer och vänner. En helg där skärmarna blir större, matcherna hetare och nya lagkamrater väntar runt varje hörn.',
-  'Be part of it': 'Bli en del av det', 'SEATS': 'PLATSER', 'TOURNAMENTS': 'TURNERINGAR', 'SEK IN PRIZES': 'KR I PRISPOTTEN', 'HOURS OF GAMING': 'TIMMAR GAMING',
+  'Be part of it': 'Bli en del av det', 'SEATS': 'PLATSER', 'TOURNAMENTS': 'TURNERINGAR', 'PRIZE POOL': 'PRISPOTT', 'TBD': 'BESTÄMS SENARE', 'HOURS OF GAMING': 'TIMMAR GAMING',
   'STAY ON TOP OF THE ACTION': 'HÅLL KOLL PÅ ACTIONEN', 'SCHEDULE': 'SCHEMA',
   'From the first boot-up to the final match, there’s always something happening.': 'Från första uppstarten till sista finalen händer det alltid något.',
   'From doors opening on Friday to the event ending on Sunday, there’s always something happening.': 'Från att dörrarna öppnas på fredag till att eventet avslutas på söndag händer det alltid något.',
@@ -33,7 +33,7 @@ const translations = {
   'CS2 Tournament · 2v2': 'CS2-turnering · 2 mot 2', 'CS2 Tournament · 1v1': 'CS2-turnering · 1 mot 1',
   'Bring your teammate and compete for the win.': 'Ta med en lagkamrat och tävla om segern.', 'Take on your opponents solo.': 'Möt dina motståndare på egen hand.',
   'Team up for another 2v2 tournament.': 'Samla laget för ännu en 2 mot 2-turnering.', 'Play freely until the next tournament.': 'Spela fritt fram till nästa turnering.',
-  'Doors open': 'Dörrarna öppnar', 'Check in, find your seat and get settled.': 'Checka in, hitta din plats och gör dig hemmastadd.',
+  'Doors open': 'Dörrarna öppnar', 'Check in, find your seat and get settled.': 'Checka in, hitta en plats och gör dig hemmastadd.',
   'Free play': 'Fri gaming', 'Warm up, meet new people and play your way.': 'Värm upp, träffa nya vänner och spela fritt.',
   'CS2 Tournament': 'CS2-turnering', 'Group stages kick off on the main stage.': 'Gruppspelet drar igång på huvudscenen.',
   'EA FC Tournament': 'EA FC-turnering', '1v1. No excuses. Just goals.': '1 mot 1. Inga ursäkter. Bara mål.',
@@ -41,18 +41,25 @@ const translations = {
   'Test your gaming knowledge and keep the energy up.': 'Testa dina spelkunskaper och håll energin uppe.',
   'Finals & awards ceremony': 'Finaler och prisutdelning', 'The final match. The loudest applause.': 'Den sista matchen. De största applåderna.',
   'PLAY FOR GLORY': 'SPELA OM ÄRAN', 'CHOOSE YOUR': 'VÄLJ DIN', 'FIGHT.': 'UTMANING.', 'Register your team': 'Anmäl ditt lag',
-  'PRIZE POOL': 'PRISPOTT', 'PRIZE': 'PRIS', 'STARTS': 'STARTAR', 'TEAMS': 'LAG', 'TBD': 'EJ FASTSTÄLLT',
+  'PRIZE POOL': 'PRISPOTT', 'PRIZE': 'PRIS', 'STARTS': 'STARTAR', 'TEAMS': 'LAG',
   'FORMAT': 'FORMAT', 'DAY': 'DAG', 'Friday': 'Fredag', 'Saturday': 'Lördag',
-  'SEAT BOOKING': 'PLATSBOKNING', 'YOUR SPOT.': 'DIN PLATS.', 'First name': 'Förnamn', 'Last name': 'Efternamn',
-  'Email': 'E-post', 'Phone': 'Telefon', 'School class': 'Klass', 'Gamer tag': 'Spelnamn', 'Favorite game': 'Favoritspel',
-  'Choose a game': 'Välj spel', 'Seat': 'Sittplats', 'Choose on the map': 'Välj på kartan', 'PAYMENT': 'BETALNING',
-  'Payment is completed after your booking has been registered.': 'Betalningen slutförs efter att bokningen har registrerats.',
-  'The organizer will provide the Swish number and amount before payment.': 'Arrangören meddelar Swishnummer och belopp före betalning.',
+  'EVENT REGISTRATION': 'EVENTANMÄLAN', 'REGISTER': 'ANMÄL DIG', 'NOW.': 'NU.', 'First name': 'Förnamn', 'Last name': 'Efternamn',
+  'Email': 'E-post', 'Phone': 'Telefon',
+  'CHOOSE YOUR TICKET': 'VÄLJ DIN BILJETT',
+  'Entry with a table': 'Inträde med bord', 'Premium entry': 'Premiuminträde',
+  'Entry only': 'Endast inträde', 'No table included': 'Utan bord',
+  'Prize to be announced': 'Pris bestäms senare',
+  'Tournament': 'Turnering', 'Optional add-on': 'Valfritt tillval',
+  'Not available with entry-only ticket.': 'Ingår inte med biljetten Endast inträde.',
+  'BOOKING CONFIRMED': 'BOKNING BEKRÄFTAD', 'TOTAL:': 'TOTALT:',
+  'Close confirmation': 'Stäng bekräftelsen',
+  'Your ticket selection is saved.': 'Ditt biljettval är sparat.',
+  'Selected ticket:': 'Vald biljett:', 'Tournament participation:': 'Turneringsdeltagande:',
+  'Yes': 'Ja', 'No': 'Nej',
   'I agree to the event rules and terms.': 'Jag godkänner eventets regler och villkor.', 'Confirm booking': 'Bekräfta bokning',
-  'Open Swish': 'Öppna Swish', 'CHOOSE YOUR SEAT': 'VÄLJ DIN PLATS', 'Available': 'Ledig', 'Reserved': 'Bokad',
-  'Selected seat:': 'Vald plats:', 'None selected': 'Ingen vald', 'MAIN STAGE / SCREEN': 'HUVUDSCEN / SKÄRM', 'REWARDS': 'PRISER', 'WIN': 'VINN', 'SOMETHING.': 'NÅGOT.',
-  'Gaming keyboard': 'Gamingtangentbord', '1st place': '1:a plats', 'Gaming mouse': 'Gamingmus', '2nd place': '2:a plats',
-  'Gift card': 'Presentkort', '3rd place': '3:e plats', 'PLAY FAIR': 'SPELA SCHYSST', 'RULES': 'REGLER', 'ARE RULES.': 'ÄR REGLER.',
+  'REWARDS': 'PRISER', 'WIN': 'VINN', 'SOMETHING.': 'NÅGOT.',
+  '1st place': '1:a plats', '2nd place': '2:a plats',
+  '3rd place': '3:e plats', 'PLAY FAIR': 'SPELA SCHYSST', 'RULES': 'REGLER', 'ARE RULES.': 'ÄR REGLER.',
   '01 / GENERAL': '01 / ALLMÄNT', '02 / EQUIPMENT': '02 / UTRUSTNING', '03 / NETWORK': '03 / NÄTVERK', '04 / CONDUCT': '04 / BETEENDE',
   'YOU ASK. WE ANSWER.': 'DU FRÅGAR. VI SVARAR.', 'GOOD TO': 'BRA ATT', 'KNOW.': 'VETA.',
   'Do I need to bring my own computer?': 'Måste jag ta med egen dator?',
@@ -60,19 +67,15 @@ const translations = {
   'Is internet available?': 'Finns det internet?', 'We provide stable, high-speed internet to all participants through our local network.': 'Vi erbjuder stabilt och snabbt internet till alla deltagare via vårt lokala nätverk.',
   'Can I sleep at the venue?': 'Kan jag sova på plats?', 'Absolutely. Bring a sleeping bag and sleeping mat. We have a dedicated quiet sleeping area.': 'Absolut. Ta med sovsäck och liggunderlag. Vi har en särskild lugn sovzon.',
   'Is there a kiosk?': 'Finns det en kiosk?', 'Yes, the kiosk is open throughout the event and offers snacks, drinks and light meals.': 'Ja, kiosken är öppen under hela eventet och erbjuder snacks, dryck och enklare mat.',
-  'How do I book a seat?': 'Hur bokar jag en plats?', 'Fill in the form above, choose an available seat and confirm your booking.': 'Fyll i formuläret ovan, välj en ledig plats och bekräfta bokningen.',
+  'How do I register?': 'Hur anmäler jag mig?', 'Fill in the form above and confirm your registration.': 'Fyll i formuläret ovan och bekräfta din anmälan.',
   'THE VIBE': 'KÄNSLAN', 'INSIDE THE': 'INNE I', 'GATE.': 'GATE.', 'High energy. Long nights. A community that makes every match bigger.': 'Hög energi. Långa nätter. En gemenskap som gör varje match större.',
   '01 / THE SETUP': '01 / GAMINGPLATSEN', '02 / FOCUS': '02 / FOKUS', '03 / AFTER DARK': '03 / EFTER MÖRKRETS INBROTT',
   'Gaming setup with neon lights': 'Gamingdator med neonljus', 'Player at a gaming setup': 'Spelare vid en gamingdator', 'Gaming station with colored lights': 'Gamingplats med färgad belysning',
   'POWERED BY': 'MED STÖD AV', 'OUR': 'VÅRT', 'CREW.': 'GÄNG.', 'HAVE QUESTIONS?': 'HAR DU FRÅGOR?', 'JOIN THE': 'GÅ MED I', 'CONVERSATION.': 'SAMTALET.',
-  'Discord server': 'Discord-server', 'Name': 'Namn', 'Your name': 'Ditt namn', 'you@email.com': 'din@email.com', 'Message': 'Meddelande',
-  'Write your message...': 'Skriv ditt meddelande...', 'Send message': 'Skicka meddelande', 'DECEMBER 12–13 · VÄXJÖ': '12–13 DECEMBER · VÄXJÖ',
+  'Discord server': 'Discord-server', 'DECEMBER 12–13 · VÄXJÖ': '12–13 DECEMBER · VÄXJÖ',
   'All rights reserved.': 'Alla rättigheter förbehållna.', 'Back to top': 'Till toppen', 'Close image': 'Stäng bild',
   'Switch to Swedish': 'Byt till svenska', 'Switch to English': 'Byt till engelska',
-  'Please select a seat on the map first.': 'Välj en sittplats på kartan först.',
-  'Thank you for your booking,': 'Tack för din bokning,', 'Seat': 'Plats', 'is reserved.': 'är reserverad.',
-  'Add the organizer’s Swish number in script.js to open Swish.': 'Lägg in arrangörens Swish-nummer i script.js för att öppna Swish.',
-  'Message sent': 'Meddelande skickat'
+  'Thank you for your booking,': 'Tack för din bokning,'
 };
 
 const ruleTranslations = {
@@ -178,75 +181,63 @@ sections.forEach(section => navObserver.observe(section));
 window.addEventListener('scroll', () => backTop.classList.toggle('show', window.scrollY > 500));
 backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-const seatGrid = document.getElementById('seats');
-const seatInput = document.getElementById('seat-input');
-const selectedSeatLabel = document.getElementById('selected-seat');
 const bookingForm = document.getElementById('booking-form');
 const bookingMessage = document.getElementById('booking-message');
-const swishButton = document.getElementById('swish-button');
-const swishNumber = '0729292549';
-const bookingResetVersion = 'all-seats-available-2026-08-25';
-if (localStorage.getItem('teknikumBookingReset') !== bookingResetVersion) {
-  localStorage.removeItem('teknikumBookings');
-  localStorage.setItem('teknikumBookingReset', bookingResetVersion);
-}
 const storedBookings = JSON.parse(localStorage.getItem('teknikumBookings') || '[]');
-const reservedSeats = new Set(storedBookings.map(booking => booking.seat));
-let chosenSeat = '';
+const confirmationDialog = document.getElementById('booking-confirmation-dialog');
+const confirmationDialogClose = document.getElementById('confirmation-dialog-close');
+const confirmationDetails = document.getElementById('confirmation-details');
+const tournamentParticipation = document.getElementById('tournament-participation');
+const tournamentTicketDescription = document.querySelector('.tournament-ticket small');
 
-function selectSeat(seat) {
-  document.querySelectorAll('.seat.selected').forEach(item => item.classList.remove('selected'));
-  seat.classList.add('selected');
-  chosenSeat = seat.dataset.seat;
-  seatInput.value = chosenSeat;
-  selectedSeatLabel.textContent = chosenSeat;
+function updateTournamentEligibility() {
+  const entryOnlySelected = bookingForm.querySelector('input[name="admissionTicket"]:checked')?.value === 'entryOnly';
+  tournamentParticipation.disabled = entryOnlySelected;
+  if (entryOnlySelected) tournamentParticipation.checked = false;
+  tournamentTicketDescription.textContent = entryOnlySelected
+    ? (currentLanguage === 'sv' ? 'Ingår inte med biljetten Endast inträde.' : 'Not available with entry-only ticket.')
+    : (currentLanguage === 'sv' ? 'Valfritt tillval' : 'Optional add-on');
 }
 
-function createSeat(seatNumber) {
-  const seat = document.createElement('button');
-  const seatName = `A${seatNumber}`;
-  seat.type = 'button';
-  seat.className = 'seat';
-  seat.textContent = seatNumber;
-  seat.dataset.seat = seatName;
+bookingForm.querySelectorAll('input[name="admissionTicket"]').forEach(ticket => {
+  ticket.addEventListener('change', updateTournamentEligibility);
+});
+updateTournamentEligibility();
 
-  if (reservedSeats.has(seatName)) {
-    seat.classList.add('reserved');
-    seat.disabled = true;
-  }
-
-  seat.addEventListener('click', () => selectSeat(seat));
-  return seat;
-}
-
-for (let seatNumber = 1; seatNumber <= 100; seatNumber += 1) {
-  seatGrid.appendChild(createSeat(seatNumber));
-}
+confirmationDialogClose.addEventListener('click', () => confirmationDialog.close());
+confirmationDialog.addEventListener('click', event => {
+  if (event.target === confirmationDialog) confirmationDialog.close();
+});
 
 bookingForm.addEventListener('submit', event => {
   event.preventDefault();
-  if (!chosenSeat) {
-    bookingMessage.textContent = currentLanguage === 'sv' ? 'Välj en sittplats på kartan först.' : 'Please select a seat on the map first.';
-    bookingMessage.style.color = '#c03d5d';
-    return;
-  }
 
-  const data = Object.fromEntries(new FormData(event.target));
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+  const ticketPrices = { standard: 200, vip: 300, entryOnly: 100 };
+  const ticketPrice = ticketPrices[data.admissionTicket];
+  data.tournamentParticipation = formData.has('tournamentParticipation');
+  data.totalCost = ticketPrice + (data.tournamentParticipation ? 50 : 0);
   storedBookings.push(data); localStorage.setItem('teknikumBookings', JSON.stringify(storedBookings));
+  const ticketName = data.admissionTicket === 'entryOnly'
+    ? (currentLanguage === 'sv' ? 'Endast inträde' : 'Entry only')
+    : data.admissionTicket === 'standard' ? 'Standard' : 'VIP';
+  const tournamentStatus = data.tournamentParticipation
+    ? (currentLanguage === 'sv' ? 'Ja' : 'Yes')
+    : (currentLanguage === 'sv' ? 'Nej' : 'No');
   bookingMessage.textContent = currentLanguage === 'sv'
-    ? `Tack för din bokning, ${data.firstName}! Plats ${chosenSeat} är reserverad.`
-    : `Thank you for your booking, ${data.firstName}! Seat ${chosenSeat} is reserved.`;
-  if (swishNumber) {
-    const paymentMessage = `Teknikum Gate - ${chosenSeat} - ${data.firstName} ${data.lastName}`;
-    swishButton.href = `swish://payment?${new URLSearchParams({ payee: swishNumber, message: paymentMessage })}`;
-    window.location.href = swishButton.href;
-  } else {
-    bookingMessage.textContent += currentLanguage === 'sv'
-      ? ' Lägg in arrangörens Swish-nummer i script.js för att öppna Swish.'
-      : ' Add the organizer’s Swish number in script.js to open Swish.';
-  }
-  const chosen = document.querySelector(`[data-seat="${chosenSeat}"]`); chosen.classList.remove('selected'); chosen.classList.add('reserved'); chosen.disabled = true;
-  event.target.reset(); chosenSeat = ''; seatInput.value = ''; selectedSeatLabel.textContent = currentLanguage === 'sv' ? 'Ingen vald' : 'None selected';
+    ? `Tack för din bokning, ${data.firstName}! Totalt att betala: ${data.totalCost} kr.`
+    : `Thank you for your booking, ${data.firstName}! Total to pay: ${data.totalCost} kr.`;
+  const selectedTicketLabel = currentLanguage === 'sv' ? 'Vald biljett:' : 'Selected ticket:';
+  const tournamentLabel = currentLanguage === 'sv' ? 'Turneringsdeltagande:' : 'Tournament participation:';
+  const totalLabel = currentLanguage === 'sv' ? 'Totalt att betala:' : 'Total to pay:';
+  confirmationDetails.textContent = `${totalLabel} ${data.totalCost} kr. ${selectedTicketLabel} ${ticketName}. ${tournamentLabel} ${tournamentStatus}.`;
+  document.getElementById('confirmation-title').textContent = currentLanguage === 'sv'
+    ? `TOTALT: ${data.totalCost} KR`
+    : `TOTAL: ${data.totalCost} KR`;
+  confirmationDialog.showModal();
+  event.target.reset();
+  updateTournamentEligibility();
 });
 
 document.querySelectorAll('.rule-tab').forEach(tab => tab.addEventListener('click', () => {
@@ -264,4 +255,3 @@ document.querySelector('.theme-toggle').addEventListener('click', event => {
   document.body.classList.toggle('light-mode');
   event.currentTarget.innerHTML = document.body.classList.contains('light-mode') ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
 });
-document.querySelector('.contact-form').addEventListener('submit', event => { event.preventDefault(); event.target.querySelector('.button').innerHTML = `${currentLanguage === 'sv' ? 'Meddelande skickat' : 'Message sent'} <i class="fa-solid fa-check"></i>`; event.target.reset(); });
