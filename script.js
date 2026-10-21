@@ -15,7 +15,7 @@ const translations = {
   '24 hours of gaming, tournaments and community.': '24 timmar gaming, turneringar och gemenskap.',
   'Växjö’s ultimate LAN experience awaits.': 'Växjös bästa LAN-upplevelse väntar.', 'Explore the event': 'Upptäck eventet',
   'DATE': 'DATUM', 'FEB 19–21, 2027': '19–21 FEB 2027', 'LOCATION': 'PLATS', 'TEKNIKUM, VÄXJÖ': 'TEKNIKUM, VÄXJÖ',
-  'SEATS LEFT': 'PLATSER KVAR', 'NON-STOP': 'UTAN AVBROTT', 'SCROLL TO EXPLORE': 'SCROLLA FÖR ATT UTFORSKA',
+  'NON-STOP': 'UTAN AVBROTT', 'SCROLL TO EXPLORE': 'SCROLLA FÖR ATT UTFORSKA',
   'EVENT': 'EVENEMANG', 'COUNTDOWN': 'NEDRÄKNING', 'DAYS': 'DAGAR', 'HOURS': 'TIMMAR', 'MINUTES': 'MINUTER', 'SECONDS': 'SEKUNDER',
   'MORE THAN A LAN': 'MER ÄN ETT LAN', 'YOUR GAME.': 'DITT SPEL.', 'YOUR ARENA.': 'DIN ARENA.',
   'Teknikum Gate is a meeting place for gamers, creators and friends. A weekend where the screens get bigger, the matches get more intense, and new teammates are around every corner.': 'Teknikum Gate är en mötesplats för gamers, kreatörer och vänner. En helg där skärmarna blir större, matcherna hetare och nya lagkamrater väntar runt varje hörn.',
