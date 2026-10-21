@@ -14,7 +14,7 @@ const translations = {
   'TEKNIKUM GATE PRESENTS': 'TEKNIKUM GATE PRESENTERAR',
   '24 hours of gaming, tournaments and community.': '24 timmar gaming, turneringar och gemenskap.',
   'Växjö’s ultimate LAN experience awaits.': 'Växjös bästa LAN-upplevelse väntar.', 'Explore the event': 'Upptäck eventet',
-  'DATE': 'DATUM', 'DEC 12–13, 2027': '12–13 DEC 2027', 'LOCATION': 'PLATS', 'TEKNIKUM, VÄXJÖ': 'TEKNIKUM, VÄXJÖ',
+  'DATE': 'DATUM', 'FEB 19–21, 2027': '19–21 FEB 2027', 'LOCATION': 'PLATS', 'TEKNIKUM, VÄXJÖ': 'TEKNIKUM, VÄXJÖ',
   'SEATS LEFT': 'PLATSER KVAR', 'NON-STOP': 'UTAN AVBROTT', 'SCROLL TO EXPLORE': 'SCROLLA FÖR ATT UTFORSKA',
   'EVENT': 'EVENEMANG', 'COUNTDOWN': 'NEDRÄKNING', 'DAYS': 'DAGAR', 'HOURS': 'TIMMAR', 'MINUTES': 'MINUTER', 'SECONDS': 'SEKUNDER',
   'MORE THAN A LAN': 'MER ÄN ETT LAN', 'YOUR GAME.': 'DITT SPEL.', 'YOUR ARENA.': 'DIN ARENA.',
@@ -74,7 +74,7 @@ const translations = {
   '01 / THE SETUP': '01 / GAMINGPLATSEN', '02 / FOCUS': '02 / FOKUS', '03 / AFTER DARK': '03 / EFTER MÖRKRETS INBROTT',
   'Gaming setup with neon lights': 'Gamingdator med neonljus', 'Player at a gaming setup': 'Spelare vid en gamingdator', 'Gaming station with colored lights': 'Gamingplats med färgad belysning',
   'POWERED BY': 'MED STÖD AV', 'OUR': 'VÅRT', 'CREW.': 'GÄNG.', 'HAVE QUESTIONS?': 'HAR DU FRÅGOR?', 'JOIN THE': 'GÅ MED I', 'CONVERSATION.': 'SAMTALET.',
-  'Discord server': 'Discord-server', 'DECEMBER 12–13 · VÄXJÖ': '12–13 DECEMBER · VÄXJÖ',
+  'Discord server': 'Discord-server', 'FEBRUARY 19–21 · VÄXJÖ': '19–21 FEBRUARI · VÄXJÖ',
   'All rights reserved.': 'Alla rättigheter förbehållna.', 'Back to top': 'Till toppen', 'Close image': 'Stäng bild',
   'Switch to Swedish': 'Byt till svenska', 'Switch to English': 'Byt till engelska',
   'Teknikum Gate logo': 'Teknikum Gate-logotyp',
@@ -152,7 +152,7 @@ menuToggle.addEventListener('click', () => {
 });
 document.querySelectorAll('.main-nav a').forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
 
-const eventDate = new Date('2026-12-12T10:00:00+01:00').getTime();
+const eventDate = new Date('2027-02-19T10:00:00+01:00').getTime();
 function updateCountdown() {
   const distance = Math.max(0, eventDate - Date.now());
   const values = {
