@@ -94,20 +94,9 @@
 			<div class="container">
 				<div class="section-heading reveal"><p class="eyebrow"><span></span> EVENT REGISTRATION</p><h2>REGISTER<br><em>NOW.</em></h2></div>
 				<div class="booking-layout reveal">
-					<form class="booking-form" id="booking-form">
-						<div class="form-row"><label>First name<input name="firstName" required placeholder="Alex"></label><label>Last name<input name="lastName" required placeholder="Svensson"></label></div>
-						<div class="form-row"><label>Email<input type="email" name="email" required placeholder="alex@email.com"></label><label>Phone<input type="tel" name="phone" required placeholder="070-000 00 00"></label></div>
-						<fieldset class="ticket-options">
-							<legend>CHOOSE YOUR TICKET</legend>
-							<div class="ticket-grid">
-								<label class="ticket-card"><input type="radio" name="admissionTicket" value="standard" required><span class="ticket-card-icon"><i class="fa-solid fa-ticket"></i></span><strong>Standard</strong><small>A seat at a medium-sized table shared with one other person</small><span class="ticket-price">200 kr</span></label>
-								<label class="ticket-card"><input type="radio" name="admissionTicket" value="vip" required><span class="ticket-card-icon"><i class="fa-solid fa-crown"></i></span><strong>VIP</strong><small>Your own table and free items from the kiosk</small><span class="ticket-price">300 kr</span></label>
-								<label class="ticket-card"><input type="radio" name="admissionTicket" value="entryOnly" required><span class="ticket-card-icon"><i class="fa-solid fa-door-open"></i></span><strong>Entry only</strong><small>No table included</small><span class="ticket-price">100 kr</span></label>
-								<label class="ticket-card tournament-ticket"><input id="tournament-participation" type="checkbox" name="tournamentParticipation" value="yes"><span class="ticket-card-icon"><i class="fa-solid fa-trophy"></i></span><strong>Tournament</strong><small>Optional add-on</small><span class="ticket-price">50 kr</span></label>
-							</div>
-						</fieldset>
-						<label class="check-label"><input type="checkbox" required> I agree to the event rules and terms.</label><button class="button" type="submit">Confirm booking <i class="fa-solid fa-arrow-right"></i></button><p class="form-message" id="booking-message"></p>
-					</form>
+					<div class="google-form-embed">
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSflkffOcOxtQUEGYuPHSobqrHUUlX03a-_LgOFmgU0FKjm0fw/viewform?embedded=true" title="Teknikum Gate ticket booking form" loading="lazy">Loading…</iframe>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -122,13 +111,6 @@
 		<section class="contact-section" id="kontakt"><div class="container contact-inner"><div class="contact-copy"><p class="eyebrow"><span></span> HAVE QUESTIONS?</p><h2>JOIN THE<br><em>CONVERSATION.</em></h2><div class="contact-links"><a href="mailto:teknikumgate@gmail.com"><i class="fa-solid fa-envelope"></i> teknikumgate@gmail.com</a><a href="https://discord.gg/Xqjj789jzD"><i class="fa-brands fa-discord"></i> Discord server</a><a href="#"><i class="fa-brands fa-instagram"></i> @teknikumgate</a></div></div><div class="contact-art"><img src="Teknikum Gate Logo V1 Transparent Background.png" alt="Teknikum Gate logo"></div></div></section>
 	</main>
 	<footer><div class="container footer-inner"><a class="brand" href="#hem"><span class="brand-symbol">TG</span><span>TEKNIKUM<br><b>GATE</b></span></a><p>TEKNIKUM GATE LAN 2027<br>PLAY HARD. STAY HUMAN.<br><small>DECEMBER 12–13 · VÄXJÖ</small></p><div class="socials"><a href="https://discord.gg/Xqjj789jzD" aria-label="Discord"><i class="fa-brands fa-discord"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></div></div><div class="container copyright">© 2027 Teknikum Gate. All rights reserved.</div></footer>
-	<dialog class="booking-confirmation-dialog" id="booking-confirmation-dialog" aria-labelledby="confirmation-title">
-		<button class="payment-dialog-close" id="confirmation-dialog-close" type="button" aria-label="Close confirmation"><i class="fa-solid fa-xmark"></i></button>
-		<p class="eyebrow">PAYMENT DETAILS</p>
-		<h2 id="confirmation-title">TOTAL: 0 KR</h2>
-		<p class="payment-instructions" id="confirmation-details"></p>
-		<img class="swish-qr" src="Mohammad%20Swish.jpg" alt="Mohammad's Swish QR code">
-	</dialog>
 	<button class="back-top" id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button><div class="lightbox" id="lightbox"><button aria-label="Close image"><i class="fa-solid fa-xmark"></i></button><img src="" alt=""></div>
 	<script src="script.js"></script>
 </body>
