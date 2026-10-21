@@ -54,16 +54,19 @@
 			<div class="container countdown-inner">
 				<div>
 					<p class="eyebrow">EVENT</p>
-					<h2>COUNTDOWN</h2>
+					<h2 id="countdown-title">COUNTDOWN</h2>
 				</div>
-				<div class="timer" id="countdown">
-					<div><strong data-unit="days">00</strong><span>DAYS</span></div>
-					<b>:</b>
-					<div><strong data-unit="hours">00</strong><span>HOURS</span></div>
-					<b>:</b>
-					<div><strong data-unit="minutes">00</strong><span>MINUTES</span></div>
-					<b>:</b>
-					<div><strong data-unit="seconds">00</strong><span>SECONDS</span></div>
+				<div class="timer" id="countdown" aria-live="polite">
+					<div class="timer-values" id="countdown-values">
+						<div><strong data-unit="days">00</strong><span>DAYS</span></div>
+						<b>:</b>
+						<div><strong data-unit="hours">00</strong><span>HOURS</span></div>
+						<b>:</b>
+						<div><strong data-unit="minutes">00</strong><span>MINUTES</span></div>
+						<b>:</b>
+						<div><strong data-unit="seconds">00</strong><span>SECONDS</span></div>
+					</div>
+					<strong class="event-live" id="event-live" hidden>LIVE</strong>
 				</div>
 			</div>
 		</section>
@@ -80,7 +83,7 @@
 		</section>
 
 		<section class="container stats-grid reveal">
-			<div><strong>05</strong><span>TOURNAMENTS</span></div>
+			<div><strong>03</strong><span>TOURNAMENTS</span></div>
 			<div><strong>TBD</strong><span>PRIZE POOL</span></div>
 			<div><strong>24</strong><span>HOURS OF GAMING</span></div>
 		</section>

@@ -41,3 +41,4 @@ main>section:not(#boka):not(.countdown){background-image:radial-gradient(ellipse
 #boka .section-heading h2 em{color:var(--paper);-webkit-text-stroke:0}
 .stats-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:720px){.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+ .countdown-inner [hidden]{display:none}.timer-values{display:flex;align-items:center;gap:20px}.timer>.timer-values{flex-direction:row;align-items:center}.timer-values>div{display:flex;flex-direction:column;align-items:center}.timer-values>b{font:400 30px var(--display);opacity:.4}.event-live{display:flex;align-items:center;gap:12px;font:900 42px/1 var(--display);letter-spacing:2px}.event-live:before{content:"";width:12px;height:12px;border-radius:50%;background:#e32345;box-shadow:0 0 14px rgba(227,35,69,.65)}

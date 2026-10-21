@@ -152,9 +152,17 @@ menuToggle.addEventListener('click', () => {
 });
 document.querySelectorAll('.main-nav a').forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
 
-const eventDate = new Date('2027-02-19T10:00:00+01:00').getTime();
+const eventDate = new Date('2027-02-19T08:00:00+01:00').getTime();
 function updateCountdown() {
-  const distance = Math.max(0, eventDate - Date.now());
+  const isLive = Date.now() >= eventDate;
+  const countdownValues = document.getElementById('countdown-values');
+  const eventLive = document.getElementById('event-live');
+  countdownValues.hidden = isLive;
+  eventLive.hidden = !isLive;
+
+  if (isLive) return;
+
+  const distance = eventDate - Date.now();
   const values = {
     days: Math.floor(distance / 86400000),
     hours: Math.floor(distance / 3600000) % 24,
