@@ -7,7 +7,7 @@ const languageToggle = document.getElementById('language-toggle');
 const translations = {
   'LOADING EVENT': 'LADDAR EVENTET',
   'Home': 'Hem', 'About': 'Om eventet', 'Schedule': 'Schema', 'Tournaments': 'Turneringar',
-  'Book a seat': 'Boka plats', 'Rules': 'Regler', 'Contact': 'Kontakt', 'Main navigation': 'Huvudnavigation',
+  'Book a seat': 'Boka plats', 'Rules/Prizes': 'Regler/Priser', 'Contact': 'Kontakt', 'Main navigation': 'Huvudnavigation',
   'Teknikum Gate home': 'Teknikum Gate startsida', 'Toggle theme': 'Byt tema', 'Open menu': 'Öppna meny',
   'Lock In': 'Boka nu', 'LOCK IN': 'BOKA NU', 'LOCK IN.': 'FOKUSERA.',
   'PLAY HARD.': 'SPELA HÅRT.', 'PLAY HARD. STAY HUMAN.': 'SPELA HÅRT. VAR SCHYSST.',
@@ -19,7 +19,7 @@ const translations = {
   'EVENT': 'EVENEMANG', 'COUNTDOWN': 'NEDRÄKNING', 'DAYS': 'DAGAR', 'HOURS': 'TIMMAR', 'MINUTES': 'MINUTER', 'SECONDS': 'SEKUNDER',
   'MORE THAN A LAN': 'MER ÄN ETT LAN', 'YOUR GAME.': 'DITT SPEL.', 'YOUR ARENA.': 'DIN ARENA.',
   'Teknikum Gate is a meeting place for gamers, creators and friends. A weekend where the screens get bigger, the matches get more intense, and new teammates are around every corner.': 'Teknikum Gate är en mötesplats för gamers, kreatörer och vänner. En helg där skärmarna blir större, matcherna hetare och nya lagkamrater väntar runt varje hörn.',
-  'Be part of it': 'Bli en del av det', 'SEATS': 'PLATSER', 'TOURNAMENTS': 'TURNERINGAR', 'PRIZE POOL': 'PRISPOTT', 'TBD': 'BESTÄMS SENARE', 'HOURS OF GAMING': 'TIMMAR GAMING',
+  'Be part of it': 'Bli en del av det', 'TOURNAMENTS': 'TURNERINGAR', 'PRIZE POOL': 'PRISPOTT', 'TBD': 'BESTÄMS SENARE', 'HOURS OF GAMING': 'TIMMAR GAMING',
   'STAY ON TOP OF THE ACTION': 'HÅLL KOLL PÅ ACTIONEN', 'SCHEDULE': 'SCHEMA',
   'From the first boot-up to the final match, there’s always something happening.': 'Från första uppstarten till sista finalen händer det alltid något.',
   'From doors opening on Friday to the event ending on Sunday, there’s always something happening.': 'Från att dörrarna öppnas på fredag till att eventet avslutas på söndag händer det alltid något.',
@@ -49,7 +49,7 @@ const translations = {
   'A seat at a medium-sized table shared with one other person': 'En plats vid ett medelstort bord som delas med en annan person',
   'Your own table and free items from the kiosk': 'Eget bord och gratis varor från kiosken',
   'Entry only': 'Endast inträde', 'No table included': 'Utan bord',
-  'Prize to be announced': 'Pris bestäms senare',
+  'Prize to be announced': 'Priserna presenteras närmare eventet',
   'Tournament': 'Turnering', 'Optional add-on': 'Valfritt tillval',
   'Not available with entry-only ticket.': 'Ingår inte med biljetten Endast inträde.',
   'BOOKING CONFIRMED': 'BOKNING BEKRÄFTAD', 'TOTAL:': 'TOTALT:',
@@ -82,16 +82,16 @@ const translations = {
 };
 
 const ruleTranslations = {
-  allmant: ['Respektera alla deltagare', 'Ingen mobbning eller diskriminering', 'Följ arrangörernas instruktioner'],
-  utrustning: ['Ta med egen dator och skärm', 'Ta med egna kablar', 'Märk din utrustning'],
-  natverk: ['Ingen hacking eller DDoS-attacker', 'Ingen olaglig nedladdning', 'Visa hänsyn till nätverket'],
-  beteende: ['Skada inte lokalen eller utrustningen', 'Inget fusk', 'Stör inte andra lag']
+  allmant: ['Visa respekt för deltagare och arrangörer', 'Mobbning, trakasserier och diskriminering accepteras inte', 'Följ arrangörernas instruktioner'],
+  utrustning: ['Ta med egen dator, skärm, tillbehör och nödvändiga kablar', 'Märk din utrustning med namn', 'Du ansvarar för din egen utrustning'],
+  natverk: ['Använd nätverket ansvarsfullt', 'Intrång, attacker och störningar av nätverket är förbjudna', 'Ladda inte ner eller sprid olagligt material'],
+  beteende: ['Använd inte fusk eller otillåtna program', 'Var rädd om lokalen och arrangörens utrustning', 'Visa hänsyn till andra deltagare och ljudnivån']
 };
 const englishRules = {
-  allmant: ['Respect all participants', 'No bullying or discrimination', 'Follow the organizers’ instructions'],
-  utrustning: ['Bring your own computer and monitor', 'Bring your own cables', 'Label your equipment'],
-  natverk: ['No hacking or DDoS attacks', 'No illegal downloading', 'Use the network responsibly'],
-  beteende: ['Do not damage the venue or equipment', 'No cheating', 'Do not disrupt other teams']
+  allmant: ['Respect participants and organizers', 'Bullying, harassment, and discrimination are not allowed', 'Follow the organizers’ instructions'],
+  utrustning: ['Bring your own computer, monitor, peripherals, and necessary cables', 'Label your equipment with your name', 'You are responsible for your own equipment'],
+  natverk: ['Use the network responsibly', 'Unauthorized access, attacks, and network disruption are prohibited', 'Do not download or share illegal material'],
+  beteende: ['Do not cheat or use unauthorized software', 'Take care of the venue and the organizers’ equipment', 'Be considerate of other participants and noise levels']
 };
 const originalText = new WeakMap();
 const originalAttributes = new WeakMap();
