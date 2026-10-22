@@ -65,8 +65,8 @@ const translations = {
   '01 / GENERAL': '01 / ALLMÄNT', '02 / EQUIPMENT': '02 / UTRUSTNING', '03 / NETWORK': '03 / NÄTVERK', '04 / CONDUCT': '04 / BETEENDE',
   'YOU ASK. WE ANSWER.': 'DU FRÅGAR. VI SVARAR.', 'GOOD TO': 'BRA ATT', 'KNOW.': 'VETA.',
   'Do I need to bring my own computer?': 'Måste jag ta med egen dator?',
-  'Yes, bring your own computer, monitor, keyboard, mouse and all the cables you need.': 'Ja, ta med egen dator, skärm, tangentbord, mus och alla kablar du behöver.',
-  'Is internet available?': 'Finns det internet?', 'We provide stable, high-speed internet to all participants through our local network.': 'Vi erbjuder stabilt och snabbt internet till alla deltagare via vårt lokala nätverk.',
+  'Yes, bring your own computer, monitor, keyboard, and mouse. We will provide the network cable.': 'Ja, ta med egen dator, skärm, tangentbord och mus. Nätverkskabel fixar vi.',
+  'Is internet available?': 'Finns det internet?', 'We provide a 1000/1000 Mbps wired network. Wireless internet (Wi-Fi) will not be available.': 'Vi erbjuder ett trådbundet nätverk på 1000/1000 Mbps. Trådlöst nätverk (Wi-Fi) finns inte.',
   'Can I sleep at the venue?': 'Kan jag sova på plats?', 'Absolutely. Bring a sleeping bag and sleeping mat. We have a dedicated quiet sleeping area.': 'Absolut. Ta med sovsäck och liggunderlag. Vi har en särskild lugn sovzon.',
   'Is there a kiosk?': 'Finns det en kiosk?', 'Yes, the kiosk is open throughout the event and offers snacks, drinks and light meals.': 'Ja, kiosken är öppen under hela eventet och erbjuder snacks, dryck och enklare mat.',
   'How do I register?': 'Hur anmäler jag mig?', 'Fill in the form above and confirm your registration.': 'Fyll i formuläret ovan och bekräfta din anmälan.',
@@ -78,20 +78,63 @@ const translations = {
   'All rights reserved.': 'Alla rättigheter förbehållna.', 'Back to top': 'Till toppen', 'Close image': 'Stäng bild',
   'Switch to Swedish': 'Byt till svenska', 'Switch to English': 'Byt till engelska',
   'Teknikum Gate logo': 'Teknikum Gate-logotyp',
-  'Thank you for your booking,': 'Tack för din bokning,'
+  'Thank you for your booking,': 'Tack för din bokning,',
+  '⚠️ Breaking the rules may result in a warning or removal from the event without a refund.': '⚠️ Brott mot reglerna kan leda till varning eller avstängning från eventet utan återbetalning.'
 };
 
 const ruleTranslations = {
-  allmant: ['Visa respekt för deltagare och arrangörer', 'Mobbning, trakasserier och diskriminering accepteras inte', 'Följ arrangörernas instruktioner'],
-  utrustning: ['Ta med egen dator, skärm, tillbehör och nödvändiga kablar', 'Märk din utrustning med namn', 'Du ansvarar för din egen utrustning'],
-  natverk: ['Använd nätverket ansvarsfullt', 'Intrång, attacker och störningar av nätverket är förbjudna', 'Ladda inte ner eller sprid olagligt material'],
-  beteende: ['Använd inte fusk eller otillåtna program', 'Var rädd om lokalen och arrangörens utrustning', 'Visa hänsyn till andra deltagare och ljudnivån']
+  allmant: [
+    'Följ arrangörernas instruktioner hela tiden.',
+    'Visa respekt mot andra deltagare. Trakasserier och störande beteende är inte tillåtet.',
+    'Alkohol, droger och berusning är förbjudet.',
+    'Rökning är endast tillåten på anvisad plats utomhus.',
+    'Håll din plats ren och släng skräp i soporna.',
+    'Deltagare under 18 år behöver målsmans godkännande.'
+  ],
+  utrustning: [
+    'Du ansvarar själv för din utrustning och dina tillhörigheter.',
+    'Endast godkänd elutrustning får användas.',
+    'Högtalare är inte tillåtna. Använd headset.',
+    'Soffor, fåtöljer och egna stolar får inte tas med.',
+    'Flytta inte kablar eller annan utrustning som tillhör LAN:et.'
+  ],
+  natverk: [
+    'Egen nätverksutrustning (router, switch, accesspunkt med mera) är förbjuden.',
+    'Datorer som stör nätverket kan kopplas bort tills problemet är löst.'
+  ],
+  beteende: [
+    'Blockera inte gångar, nödutgångar eller andra deltagares platser.',
+    'Öppna lågor är förbjudna.',
+    'Olagliga nedladdningar och olämpligt innehåll är förbjudet.',
+    'Försäljning utan tillstånd är inte tillåtet.'
+  ]
 };
 const englishRules = {
-  allmant: ['Respect participants and organizers', 'Bullying, harassment, and discrimination are not allowed', 'Follow the organizers’ instructions'],
-  utrustning: ['Bring your own computer, monitor, peripherals, and necessary cables', 'Label your equipment with your name', 'You are responsible for your own equipment'],
-  natverk: ['Use the network responsibly', 'Unauthorized access, attacks, and network disruption are prohibited', 'Do not download or share illegal material'],
-  beteende: ['Do not cheat or use unauthorized software', 'Take care of the venue and the organizers’ equipment', 'Be considerate of other participants and noise levels']
+  allmant: [
+    'Follow the organizers’ instructions at all times.',
+    'Respect other participants. Harassment and disruptive behavior are not allowed.',
+    'Alcohol, drugs, and intoxication are prohibited.',
+    'Smoking is only allowed in the designated outdoor area.',
+    'Keep your area clean and put your rubbish in the bins.',
+    'Participants under 18 need a parent or guardian’s permission.'
+  ],
+  utrustning: [
+    'You are responsible for your own equipment and belongings.',
+    'Only approved electrical equipment may be used.',
+    'Speakers are not allowed. Use a headset.',
+    'Sofas, armchairs, and personal chairs may not be brought in.',
+    'Do not move LAN-owned cables or other equipment.'
+  ],
+  natverk: [
+    'Personal network equipment (routers, switches, access points, etc.) is prohibited.',
+    'Computers disrupting the network may be disconnected until the issue is resolved.'
+  ],
+  beteende: [
+    'Do not block walkways, emergency exits, or other participants’ seats.',
+    'Open flames are prohibited.',
+    'Illegal downloads and inappropriate content are prohibited.',
+    'Selling items without permission is not allowed.'
+  ]
 };
 const originalText = new WeakMap();
 const originalAttributes = new WeakMap();
