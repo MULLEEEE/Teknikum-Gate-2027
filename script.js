@@ -93,7 +93,7 @@ const ruleTranslations = {
     'Alkohol, droger och berusning är förbjudet.',
     'Rökning är endast tillåten på anvisad plats utomhus.',
     'Håll din plats ren och släng skräp i soporna.',
-    'Deltagare under 18 år behöver målsmans godkännande.'
+    'Endast barn under 14 år behöver målsmans godkännande.'
   ],
   utrustning: [
     'Du ansvarar själv för din utrustning och dina tillhörigheter.',
@@ -120,7 +120,7 @@ const englishRules = {
     'Alcohol, drugs, and intoxication are prohibited.',
     'Smoking is only allowed in the designated outdoor area.',
     'Keep your area clean and put your rubbish in the bins.',
-    'Participants under 18 need a parent or guardian’s permission.'
+    'Only children under 14 need a parent or guardian’s permission.'
   ],
   utrustning: [
     'You are responsible for your own equipment and belongings.',
