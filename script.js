@@ -72,6 +72,7 @@ const translations = {
   'Yes, bring your own computer, monitor, keyboard, and mouse. We will provide the network cable.': 'Ja, ta med egen dator, skärm, tangentbord och mus. Nätverkskabel fixar vi.',
   'Is internet available?': 'Finns det internet?', 'We provide a 1000/1000 Mbps wired network. Wireless internet (Wi-Fi) will not be available.': 'Vi erbjuder ett trådbundet nätverk på 1000/1000 Mbps. Trådlöst nätverk (Wi-Fi) finns inte.',
   'Can I sleep at the venue?': 'Kan jag sova på plats?', 'Absolutely. Bring a sleeping bag and sleeping mat. We have a dedicated quiet sleeping area.': 'Absolut. Ta med sovsäck och liggunderlag. Vi har en särskild lugn sovzon.',
+  'Can I bring my own chair?': 'Får jag ta med en egen stol?', 'Yes, you may bring your own chair, and we recommend it. If you can\'t bring one, we\'ll provide a chair.': 'Ja, du får gärna ta med en egen stol, och vi rekommenderar det. Om du inte kan ta med en stol ordnar vi en åt dig.',
   'Is there a kiosk?': 'Finns det en kiosk?', 'Yes, the kiosk is open throughout the event and offers snacks, drinks and light meals.': 'Ja, kiosken är öppen under hela eventet och erbjuder snacks, dryck och enklare mat.',
   'How do I register?': 'Hur anmäler jag mig?', 'Fill in the form above and confirm your registration.': 'Fyll i formuläret ovan och bekräfta din anmälan.',
   'THE VIBE': 'KÄNSLAN', 'INSIDE THE': 'INNE I', 'GATE.': 'GATE.', 'High energy. Long nights. A community that makes every match bigger.': 'Hög energi. Långa nätter. En gemenskap som gör varje match större.',
@@ -99,7 +100,7 @@ const ruleTranslations = {
     'Du ansvarar själv för din utrustning och dina tillhörigheter.',
     'Endast godkänd elutrustning får användas.',
     'Högtalare är inte tillåtna. Använd headset.',
-    'Soffor, fåtöljer och egna stolar får inte tas med.',
+    'Du får gärna ta med en egen stol. Vi rekommenderar det, men ordnar en stol om du inte kan ta med en.',
     'Flytta inte kablar eller annan utrustning som tillhör LAN:et.'
   ],
   natverk: [
@@ -126,7 +127,7 @@ const englishRules = {
     'You are responsible for your own equipment and belongings.',
     'Only approved electrical equipment may be used.',
     'Speakers are not allowed. Use a headset.',
-    'Sofas, armchairs, and personal chairs may not be brought in.',
+    'You are welcome to bring your own chair, and we recommend it. We will provide one if you cannot bring one.',
     'Do not move LAN-owned cables or other equipment.'
   ],
   natverk: [

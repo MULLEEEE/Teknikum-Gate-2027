@@ -14,6 +14,7 @@
 .booking-layout{grid-template-columns:minmax(0,760px);justify-content:center;gap:0}
 .sponsor-grid .sponsor-logo{display:flex;align-items:center}
 .sponsor-grid .sponsor-logo img{display:block;width:92px;height:92px;object-fit:contain;border-radius:8px;background:#fff}
+.sponsor-grid .ramirent-logo img{width:170px;height:64px;object-fit:contain;border-radius:0;background:transparent}
 .ticket-options{border:0;padding:0;margin:0}
 .ticket-options legend{margin-bottom:12px;color:#555b64;font:700 12px var(--display);letter-spacing:1.4px}
 .ticket-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
