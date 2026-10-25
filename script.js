@@ -7,7 +7,7 @@ const languageToggle = document.getElementById('language-toggle');
 const translations = {
   'LOADING EVENT': 'LADDAR EVENTET',
   'Home': 'Hem', 'About': 'Om eventet', 'Schedule': 'Schema', 'Tournaments': 'Turneringar',
-  'Book a seat': 'Boka plats', 'Rules/Prizes': 'Regler/Priser', 'Contact': 'Kontakt', 'Main navigation': 'Huvudnavigation',
+  'Book a seat': 'Boka plats', 'Rules/Prizes': 'Regler/Priser', 'Sponsors': 'Sponsorer', 'Contact': 'Kontakt', 'Main navigation': 'Huvudnavigation',
   'Teknikum Gate home': 'Teknikum Gate startsida', 'Toggle theme': 'Byt tema', 'Open menu': 'Öppna meny',
   'Lock In': 'Boka nu', 'LOCK IN': 'BOKA NU', 'LOCK IN.': 'FOKUSERA.',
   'PLAY HARD.': 'SPELA HÅRT.', 'PLAY HARD. STAY HUMAN.': 'SPELA HÅRT. VAR SCHYSST.',
@@ -111,7 +111,8 @@ const ruleTranslations = {
     'Blockera inte gångar, nödutgångar eller andra deltagares platser.',
     'Öppna lågor är förbjudna.',
     'Olagliga nedladdningar och olämpligt innehåll är förbjudet.',
-    'Försäljning utan tillstånd är inte tillåtet.'
+    'Försäljning utan tillstånd är inte tillåtet.',
+    'Stöld och andra brott polisanmäls.'
   ]
 };
 const englishRules = {
@@ -138,7 +139,8 @@ const englishRules = {
     'Do not block walkways, emergency exits, or other participants’ seats.',
     'Open flames are prohibited.',
     'Illegal downloads and inappropriate content are prohibited.',
-    'Selling items without permission is not allowed.'
+    'Selling items without permission is not allowed.',
+    'Theft and other crimes will be reported to the police.'
   ]
 };
 const originalText = new WeakMap();
